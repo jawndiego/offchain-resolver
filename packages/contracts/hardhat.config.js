@@ -12,7 +12,7 @@ if (process.env.DEPLOYER_KEY && process.env.OWNER_KEY) {
 const gatewayurl =
   'https://offchain-resolver-example.uc.r.appspot.com/{sender}/{data}.json';
 
-let devgatewayurl = 'http://localhost:8080/{sender}/{data}.json';
+let devgatewayurl = 'http://localhost:8000/{sender}/{data}.json';
 if (process.env.REMOTE_GATEWAY) {
   devgatewayurl =
     `${process.env.REMOTE_GATEWAY}/{sender}/{data}.json`;
